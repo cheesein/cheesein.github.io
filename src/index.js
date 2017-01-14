@@ -1,11 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Intro from './components/Intro';
+import Header from './components/Header';
 
 const Root = () => {
   return (
-    <Intro />
-  )
+    <div className='Root-wrapper'>
+      <Header />
+      <Intro />
+    </div>
+  );
 };
 
-render(<Root/>, document.querySelector('#main'));
+render(<Root />, document.querySelector('#main'));
